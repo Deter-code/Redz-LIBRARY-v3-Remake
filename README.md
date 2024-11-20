@@ -1,6 +1,41 @@
 # Redz Library V3
 remake
 
+## Minimize button
+```lua
+MinimizeButton({
+  Image = "rbxassetid://00000000",
+  Size = {32, 32},
+  Color = Color3.fromRGB(0, 0, 0),
+  Corner = true,
+  Stroke = false,
+  StrokeColor = Color3.fromRGB(255, 255, 255)
+})
+```
+
+## Make Window with key
+```lua
+MakeWindow({
+  Hub = {
+    Title = "title ",
+    Animation = "by : redz"
+  },
+    Key = {
+    KeySystem = False,
+    Title = "Key system",
+    Description = "descricao",
+    KeyLink = "Link",
+    Keys = {"hello123"},
+    Notifi = {
+      Notifications = true,
+      CorrectKey = "iniciando o script...",
+      Incorrectkey = "A key esta incorreta",
+      CopyKeyLink = "Copiado para a Clipboard"
+    }
+  }
+})
+```
+
 ## loadstring Source
 
 Library Source
@@ -18,21 +53,6 @@ Source Functions
 ]]
 ```
 
-## Make Window
-
-Create the Home Window
-```lua
-local Window = redzlib:MakeWindow({
-  Menu = {
-    Title = "REDz HUB teste",
-  },
-  LoadAnim = {
-    Active = true,
-    Title = "by : redz9999",
-    WaitTime = 0.5
-  }
-})
-```
 Window Finctions
 ```lua
 --[[
